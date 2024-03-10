@@ -11,6 +11,15 @@ public class ExercicioCandidato {
     }
     List<Candidato> listaCandidatos = new ArrayList<>();
     private void start() {
+        Scanner scanner = new Scanner(System.in);
+
+        //criar a lista de candidatos
+        listaCandidatos.add(new Candidato(1,"Joao"));
+        listaCandidatos.add(new Candidato(2,"Maria"));
+        listaCandidatos.add(new Candidato(3,"Jose"));
+        listaCandidatos.add(new Candidato(4,"Antonio"));
+        listaCandidatos.add(new Candidato(5,"Tibursinho"));
+
 
     }
 
