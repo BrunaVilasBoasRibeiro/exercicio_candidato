@@ -20,6 +20,13 @@ public class ExercicioCandidato {
         listaCandidatos.add(new Candidato(4,"Antonio"));
         listaCandidatos.add(new Candidato(5,"Tibursinho"));
 
+        // criar o mapa para listar os candidatos
+        Map<Integer, Candidato> mapaCandidato = new HashMap<>();
+        for (Candidato cadidato : listaCandidatos) {
+            mapaCandidato.put(cadidato.getId(),cadidato);
+        }
+        
+
 
     }
 
