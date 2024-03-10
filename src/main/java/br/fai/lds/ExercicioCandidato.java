@@ -25,6 +25,20 @@ public class ExercicioCandidato {
         for (Candidato cadidato : listaCandidatos) {
             mapaCandidato.put(cadidato.getId(),cadidato);
         }
+        int voto;
+
+        do{
+            System.out.println("Digite seu voto (0 para encerrar): ");
+            voto = scanner.nextInt();
+
+            if (voto >= 1 && voto <= 5){
+                Candidato candidato = mapaCandidato.get(voto);
+                candidato.adicionarVoto();
+                System.out.println("Obrigado, seu voto foi registrado");
+            }else if(voto !=0 ){
+                System.out.println("Opção Invalida!");
+            }
+        }while (voto != 0);
 
 
 
