@@ -40,8 +40,14 @@ public class ExercicioCandidato {
             }
         }while (voto != 0);
 
+        // ordenar os candidatos por num de votos (decrescente)
+        listaCandidatos.sort((candidato1,candidato2)-> candidato2.getVotos() - candidato1.getVotos());
+        System.out.println("O candidato eleito é: " + listaCandidatos.get(0).getNome() + ".");
 
-
+        for (int i = 0; i < listaCandidatos.size(); i++){
+            Candidato candidato = listaCandidatos.get(i);
+            System.out.println("Lugar " + (i + 1) + ": " + candidato.getNome() + " - " + candidato.getVotos() + " votos");
+        }
     }
 
 }
