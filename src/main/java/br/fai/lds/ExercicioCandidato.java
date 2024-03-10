@@ -25,7 +25,7 @@ public class ExercicioCandidato {
         for (Candidato cadidato : listaCandidatos) {
             mapaCandidato.put(cadidato.getId(),cadidato);
         }
-        
+
 
 
     }
